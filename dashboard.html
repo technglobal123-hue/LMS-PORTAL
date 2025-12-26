@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard</title>
+<style>
+:root{--bg:#0b1020;--card:#111827;--ink:#e5e7eb;--muted:#9ca3af;--brand:#22c55e}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Arial;background:var(--bg);color:var(--ink);padding-bottom:72px}
+header{position:sticky;top:0;background:#020617;padding:14px;text-align:center;z-index:5}
+.container{padding:14px}
+.card{background:var(--card);border-radius:18px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:768px){.grid{grid-template-columns:repeat(4,1fr)}}
+.thumb{aspect-ratio:16/9;border-radius:14px;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.title{padding:10px 4px;font-size:13px}
+.badge{background:#022c22;color:#86efac;border:1px solid #14532d;border-radius:999px;padding:6px 12px;display:inline-block;font-size:12px}
+.bottom{position:fixed;bottom:0;left:0;right:0;background:#020617;display:flex;justify-content:space-around;border-top:1px solid #1f2937}
+.bottom a{color:var(--ink);text-decoration:none;padding:8px 0;display:flex;flex-direction:column;align-items:center;font-size:12px}
+.bottom a span{font-size:11px;color:var(--muted)}
+.icon{font-size:22px}
+.fade-in{animation:fade .6s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.slide-in{animation:slide .6s ease}
+@keyframes slide{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header><b>Techn Global LMS</b></header>
+<div class="container slide-in">
+  <div class="card">
+    <h3>Welcome, Aaryan Yadav</h3>
+    <span class="badge">Status: Active</span>
+    <p>Program: Cyber Security Internship</p>
+  </div>
+</div>
+
+<nav class="bottom">
+  <a href="dashboard.html"><div class="icon">🏠</div><span>Home</span></a>
+  <a href="videos.html"><div class="icon">🎥</div><span>Videos</span></a>
+  <a href="certificate.html"><div class="icon">🎓</div><span>Certificates</span></a>
+  <a href="receipt.html"><div class="icon">🧾</div><span>Receipt</span></a>
+</nav>
+
+</body></html>

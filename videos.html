@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html><head><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Videos</title>
+<style>
+:root{--bg:#0b1020;--card:#111827;--ink:#e5e7eb;--muted:#9ca3af;--brand:#22c55e}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Arial;background:var(--bg);color:var(--ink);padding-bottom:72px}
+header{position:sticky;top:0;background:#020617;padding:14px;text-align:center;z-index:5}
+.container{padding:14px}
+.card{background:var(--card);border-radius:18px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:768px){.grid{grid-template-columns:repeat(4,1fr)}}
+.thumb{aspect-ratio:16/9;border-radius:14px;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover}
+.title{padding:10px 4px;font-size:13px}
+.badge{background:#022c22;color:#86efac;border:1px solid #14532d;border-radius:999px;padding:6px 12px;display:inline-block;font-size:12px}
+.bottom{position:fixed;bottom:0;left:0;right:0;background:#020617;display:flex;justify-content:space-around;border-top:1px solid #1f2937}
+.bottom a{color:var(--ink);text-decoration:none;padding:8px 0;display:flex;flex-direction:column;align-items:center;font-size:12px}
+.bottom a span{font-size:11px;color:var(--muted)}
+.icon{font-size:22px}
+.fade-in{animation:fade .6s ease}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.slide-in{animation:slide .6s ease}
+@keyframes slide{from{opacity:0;transform:translateX(12px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header><b>Video Lectures</b></header>
+<div class="container"><div class="grid"><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=inWWhr5tnEA" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/inWWhr5tnEA/hqdefault.jpg" alt="Intro to Cyber Security"></div>
+        <div class="title">1. Intro to Cyber Security</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=qiQR5rTSshw" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/qiQR5rTSshw/hqdefault.jpg" alt="Networking Basics"></div>
+        <div class="title">2. Networking Basics</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=2QGgEk20RXM" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/2QGgEk20RXM/hqdefault.jpg" alt="TCP/IP Explained"></div>
+        <div class="title">3. TCP/IP Explained</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=IVquJh3DXUA" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/IVquJh3DXUA/hqdefault.jpg" alt="Linux Basics"></div>
+        <div class="title">4. Linux Basics</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=3Kq1MIfTWCE" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/3Kq1MIfTWCE/hqdefault.jpg" alt="Ethical Hacking Intro"></div>
+        <div class="title">5. Ethical Hacking Intro</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=Vd5Yz9gH8f4" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/Vd5Yz9gH8f4/hqdefault.jpg" alt="OWASP Top 10"></div>
+        <div class="title">6. OWASP Top 10</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=ciNHn38EyRc" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/ciNHn38EyRc/hqdefault.jpg" alt="SQL Injection"></div>
+        <div class="title">7. SQL Injection</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=EoaDgUgS6QA" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/EoaDgUgS6QA/hqdefault.jpg" alt="XSS Explained"></div>
+        <div class="title">8. XSS Explained</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=Eo6j2w4p1Y8" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/Eo6j2w4p1Y8/hqdefault.jpg" alt="CSRF"></div>
+        <div class="title">9. CSRF</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=1Hn0P8KQ3FQ" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/1Hn0P8KQ3FQ/hqdefault.jpg" alt="Burp Suite"></div>
+        <div class="title">10. Burp Suite</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=4t4kBkMsDbQ" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/4t4kBkMsDbQ/hqdefault.jpg" alt="Nmap"></div>
+        <div class="title">11. Nmap</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=TkCSr30UojM" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/TkCSr30UojM/hqdefault.jpg" alt="Wireshark"></div>
+        <div class="title">12. Wireshark</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=8lR27r8Y_ik" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/8lR27r8Y_ik/hqdefault.jpg" alt="Metasploit"></div>
+        <div class="title">13. Metasploit</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=Zl9xJ7K0X6I" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/Zl9xJ7K0X6I/hqdefault.jpg" alt="Malware Basics"></div>
+        <div class="title">14. Malware Basics</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=Yc7V6G9xwV4" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/Yc7V6G9xwV4/hqdefault.jpg" alt="Ransomware"></div>
+        <div class="title">15. Ransomware</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=F5qv0u8m1nQ" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/F5qv0u8m1nQ/hqdefault.jpg" alt="Cloud Security"></div>
+        <div class="title">16. Cloud Security</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=9yH7n5s1x2A" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/9yH7n5s1x2A/hqdefault.jpg" alt="IAM"></div>
+        <div class="title">17. IAM</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=KZy8z6z1m2U" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/KZy8z6z1m2U/hqdefault.jpg" alt="SOC Basics"></div>
+        <div class="title">18. SOC Basics</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=3x0C1f9lYy8" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/3x0C1f9lYy8/hqdefault.jpg" alt="Incident Response"></div>
+        <div class="title">19. Incident Response</div>
+      </a>
+    </div><div class="card slide-in">
+      <a href="https://www.youtube.com/watch?v=HnJxw5o2yG0" target="_blank" style="color:inherit;text-decoration:none">
+        <div class="thumb"><img src="https://img.youtube.com/vi/HnJxw5o2yG0/hqdefault.jpg" alt="Career Roadmap"></div>
+        <div class="title">20. Career Roadmap</div>
+      </a>
+    </div></div></div>
+
+<nav class="bottom">
+  <a href="dashboard.html"><div class="icon">🏠</div><span>Home</span></a>
+  <a href="videos.html"><div class="icon">🎥</div><span>Videos</span></a>
+  <a href="certificate.html"><div class="icon">🎓</div><span>Certificates</span></a>
+  <a href="receipt.html"><div class="icon">🧾</div><span>Receipt</span></a>
+</nav>
+
+</body></html>
